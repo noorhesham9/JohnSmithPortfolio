@@ -15,8 +15,13 @@
 }
 .nav__logo,
 .anv__toggle {
+  transition: 0.3s;
   color: var(--title-color);
   font-weight: var(--font-medium);
+}
+
+.nav__logo:hover {
+  color: #00ccfe;
 }
 .nav__list {
   display: flex !important;

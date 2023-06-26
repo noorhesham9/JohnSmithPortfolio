@@ -7,7 +7,7 @@ const Header = () => {
       <nav className="nav container">
         <a href="index.html" className="nav__logo">
           {" "}
-          smith
+          Smith | Q-plink
         </a>
         <div className={show ? "nav__menu show-menu" : "nav__menu"}>
           <ul className="nav__list grid">
