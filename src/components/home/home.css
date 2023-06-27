@@ -1,4 +1,8 @@
 .home__container {
+  row-gap: 7rem;
+}
+
+.home__container {
   justify-content: center;
   align-items: center;
   margin: auto;
@@ -78,4 +82,51 @@
   100% {
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   }
+}
+
+.home__scroll-button{
+  display: flex; align-items: center;
+}
+.home__scroll {
+  display: grid;
+align-items: center;
+  margin-left: 9.25rem;
+}
+.wheel{
+  animation : scroll 2s ease infinte;
+}
+
+@keyframes scroll {
+  0%{
+    transform: translateY(0);
+  }
+   30%{
+    transform:  translateY(3.76rem);
+   }
+
+}
+
+.home__scroll-name{
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+  margin-right: var(--mb-0-25);
+  margin-left: 2px;
+}
+.home__scroll-arrow{
+  font-size: 1.25rem;
+  color: var(--title-color);
+}
+
+
+@media screen and (max-width : 992px) {
+  
+}
+@media screen and (max-width : 768px) {
+  
+}
+@media screen and (max-width : 576px) {
+  
+}
+@media screen and (max-width : 350px) {
+  
 }
