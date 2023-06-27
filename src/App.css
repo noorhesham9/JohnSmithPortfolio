@@ -115,7 +115,7 @@ img {
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section {
-  padding: 6rem 0 2rem;
+  padding: 6rem 20px 2rem;
 }
 
 .section__title {
@@ -194,7 +194,7 @@ img {
   }
 
   .section {
-    padding: 2rem 0 4rem;
+    padding: 2rem 20px 4rem;
   }
 
   .section__subtitle {

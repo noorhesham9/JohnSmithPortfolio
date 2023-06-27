@@ -84,49 +84,98 @@
   }
 }
 
-.home__scroll-button{
-  display: flex; align-items: center;
+.home__scroll-button {
+  display: flex;
+  align-items: center;
 }
 .home__scroll {
-  display: grid;
-align-items: center;
   margin-left: 9.25rem;
 }
-.wheel{
-  animation : scroll 2s ease infinte;
+.wheel {
+  animation: scroll 2s ease infinite;
 }
 
 @keyframes scroll {
-  0%{
+  0% {
     transform: translateY(0);
   }
-   30%{
-    transform:  translateY(3.76rem);
-   }
-
+  30% {
+    transform: translateY(8rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
-.home__scroll-name{
+.home__scroll-name {
   color: var(--title-color);
   font-weight: var(--font-medium);
   margin-right: var(--mb-0-25);
   margin-left: 2px;
 }
-.home__scroll-arrow{
+.home__scroll-arrow {
   font-size: 1.25rem;
   color: var(--title-color);
 }
 
+@media screen and (max-width: 992px) {
+  .home__content {
+    grid-template-columns: 100px repeat(2, 1fr);
+    column-gap: 1.25rem;
+  }
+  .home__hand {
+    width: 26px;
+    height: 26px;
+  }
+  .home__subtitle {
+    padding-left: 3.75rem;
+    margin-bottom: var(--mb-1);
+  }
+  .home__subtitle::before {
+    width: 42px;
+    top: 0.8rem;
+  }
+  .home__description {
+    max-width: initial;
+    margin-bottom: var(--mb-2-5);
+  }
+  .home__img {
+    width: 250px;
+    box-shadow: inset 0 0 0 8px rgb(255 255 255 / 30%);
 
-@media screen and (max-width : 992px) {
-  
+    height: 250px;
+  }
+  .home__scroll {
+    margin-left: 7.5rem;
+  }
 }
-@media screen and (max-width : 768px) {
-  
+@media screen and (max-width: 768px) {
+  .home__content {
+    grid-template-columns: 0.5fr 3fr;
+    padding-top: 3.5rem;
+  }
+  .home__img {
+    order: initial;
+    justify-content: initial;
+    box-shadow: inset 0 0 0 6px rgb(255 255 255 / 30%);
+    width: 200px;
+    height: 200px;
+  }
+  .home__data {
+    grid-column: 1/3;
+  }
+  .home__scroll {
+    display: none;
+  }
 }
-@media screen and (max-width : 576px) {
-  
-}
-@media screen and (max-width : 350px) {
-  
+@media screen and (max-width: 350px) {
+  .home__img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .home__hand {
+    width: 22px;
+    height: 22px;
+  }
 }
