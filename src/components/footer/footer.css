@@ -41,7 +41,7 @@
   border-radius: 0.5rem;
   display: inline-flex;
 }
-.footer__social-link :hover {
+.footer__social :hover {
   background-color: var(--title-color-dark);
 }
 
